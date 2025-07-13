@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajeet - Developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styel.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h4>Ajeet's Portfolio</h1></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="first">
+            <div class="leftsection">
+                <div>Hi, My name is <span class="purple">Ajeet </span> </div>
+                <div class="text-iam">and I am a passionate </div>
+                  <span id="element"></span>
+                  <div class="button">
+                   <a href="https://docs.google.com/document/d/1gvelY8_oSESakggydYaQg38-pIsfeo8C-8oizBJNohA/edit?usp=drive_link" target="_blank"> <button class="btn">Download Resume</button></a>
+                  <a href="https://github.com/Ajeet-singh-Rajput9971" target="_blank">  <button class="btn">Visit Github</button></a>
+                  </div>
+            </div>
+            <div class="rightsection">
+                <img src="PngItem_1127587.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="projects" class="second">
+            <span class="text-gray">What I have done so far</span>
+
+            <h1>Projects</h1>
+            <div class="box"></div>
+                <div class="no-project">Projects are not available right now</div>
+                
+        </section>
+        <hr>
+        <section id="about" class="third">
+             <h1>About</h1>
+                <div class="About">
+                    I have living in Ghaziabad and I am a B.C.A 1st year student in Royal College of law. I have strong knowledge of HTML, CSS, JavaScript and C language.
+                    
+                </div>
+            
+        </section>
+        <hr>
+        <section class="fourth">
+            <h1>Contact</h1>
+        
+            <form>
+                <p class="form-info">You can use the contact form below. Name and message fields are required.</p>
+                <div class="form-fill">
+                    <input type="text" id="name" placeholder="full Name" required>
+                </div>
+                <div class="form-fill">
+                    <input type="text" id="number" placeholder="Phone number" required>
+                </div>
+                <div class="form-fill">
+                    <input type="text" id="Email" placeholder="Email address">
+                </div>
+                <div class="form-fill">
+                    <textarea id="message" placeholder="Your message" style="height: 100px;"></textarea>
+                </div>
+                <div class="button-submit">
+                    <button class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+       
+        <div class="footer-rights">
+            www.Ajeetsportfolio.com | All &#169; rights reserved
+        </div>
+    </footer>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer', 'Web Developer'],
+      typeSpeed: 100,
+    });
+  </script>
+</body>
+</html>

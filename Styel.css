@@ -1,0 +1,375 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(28, 28, 80); 
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    
+    list-style: none;
+    margin-right: 23px;
+    
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(153,153,226);
+    font-size: 1.02rem;
+}
+.left{
+    font-size: 2rem;
+  
+
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.first > div{
+    
+    width: 37%;
+}
+.leftsection{
+    
+    font-size: 2.7rem;
+
+    
+}
+.rightsection img{
+    width: 80%;
+    margin-top: 50px;
+
+   
+}
+.purple{
+    color: rgb(189, 123, 250);
+}
+#element{
+    color: rgb(189, 123, 250);
+}
+.second{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh
+}
+.second h1{
+    font-size: 1.9rem ;
+    display: flex;
+    justify-content: center;
+}
+.second .box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+  
+}
+main hr{
+   border: 0;
+   background-color: rgb(191, 136, 243);
+   height: 1.2px;
+   margin: 40px 84px;
+
+}
+.text-gray{
+    color: gray;
+    display: flex;
+    justify-content: center;
+}
+.second .vertical{
+    height:93px ;
+    width: 1px;
+    background-color: white;
+    margin: 0 180px;
+
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+    
+}
+.vertical-text{
+    position: relative;
+    top: 75px;
+    width: 200px;
+    font-size: 1.2rem;
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 200px;
+    font-size: 11px;
+
+}
+footer{
+    background-color: #0c0c1a;
+    height: 53px;
+    margin-top: 23px;
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    
+}
+.footer li{
+    list-style: none;
+
+}
+
+.footer div{
+    width:190px ;
+}
+.footer-rights{
+    color: gray;
+    text-align: center;
+    padding: 12px 0 ;
+}
+.leftsection .button{
+    padding:50px 0 ;
+}
+.leftsection .btn{
+    padding: 12px;
+    background-color: rgb(23 23 82);
+    color: white;
+    border: 2px,solid, white ;
+    border-radius: 6px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.leftsection .btn:hover {
+    background-color: blueviolet;
+}
+.third{
+    width: 80vw;
+   margin: auto;
+}
+.third h1{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+.About{
+    margin-top: 50px;
+    text-align: center;
+}
+.no-project{
+    color: gray;
+    margin:10% 0;
+    text-align: center;
+}
+.fourth{
+    max-width: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.fourth .form-fill input{
+    color: white;
+    background-color: rgb(10, 3, 49);
+    border: 3px solid  rgb(191, 136, 243);
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
+    margin-top: 6px;
+
+}
+.fourth .form-fill #message{
+    
+    background-color:rgb(10, 3, 49); 
+    border: 3px solid rgb(191, 136, 243);
+    border-radius: 5px;
+    width: 80%;
+    margin-top:6px ;
+}
+.form-info{
+    text-align: center;
+}
+.form-fill{
+    display: flex;
+    justify-content: center;
+}
+.button-submit .btn-submit{
+    color: white;
+    align-items: center;
+    font-size: 20px;
+    min-width: 100px;
+    background-color: blueviolet;
+    height:40px ;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.button-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1000px ) {
+     /* body{
+        background-color: red;
+     } */
+      /*nav bar*/
+      nav{
+        flex-direction: column;
+      }
+    
+     .first{
+        flex-direction: column-reverse;
+     }
+     .second .box {
+        flex-direction: column;
+     }
+     .second .vertical {
+    height: unset;
+     }
+     .vertical-text, .vertical-desc{
+        left: 47px;
+     }
+     .image-top{
+        top: 106px;
+        left: -11px;
+     }
+     .leftsection{
+        width:100% !important ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+     }
+     .rightsection{
+        width: 72% !important;
+        display: flex;
+        justify-content: center;
+     }
+     .second {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+        
+     }
+     .footer{
+        padding: 23px 23px;
+     }
+       
+         .third{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1rem;
+
+         }
+     /* .rightsection img {
+    width: 80%;
+    margin-top: -21px;
+     } */
+   
+     }
+     
+    
+
+   @media screen and (max-width:500px){
+    .rightsection {
+        width: 70% !important;
+
+    }
+    .rightsection img{
+        margin: 0;
+    }
+    .second .vertical{
+        position: relative;
+        right: 120px;
+    }
+    nav ul li{
+        margin-right: 5.25px;
+        margin-left: 5.25px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    nav{
+        height: 90px;
+    }
+    .leftsection{
+        font-size: 1.8rem;
+    }
+    #element{
+        display: flex;
+    }
+    
+    
+    .rightsection img{
+        width: 80%;
+    }
+    .first{
+        margin-top: 50px;
+    }
+    .leftsection  .button{
+        padding: 5px 0px;
+    }
+    .leftsection .btn{
+        padding: 5px;
+    }
+    .footer-rights{
+        font-size: 0.9rem;
+        
+    }
+    .footer li{
+        font-size: 0.6rem;
+        margin-left: 25px;
+    }
+   
+    
+    h3{
+        font-size: 1rem;
+    }
+   }
+ @media screen and (max-width:380px){
+    nav ul li a { 
+        font-size: 13px;
+    }
+    .leftsection{
+    font-size: 1.7rem;
+    }
+    .leftsection .btn{
+        padding: 3px;
+    }
+    .second .vertical{
+        right: 160px;
+    }
+   
+    .second h1{
+        font-size: 1.8rem;
+    }
+    
+   } 
