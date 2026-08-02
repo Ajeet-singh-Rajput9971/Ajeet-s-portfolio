@@ -8,11 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <div class="left"><h4>Ajeet's Portfolio</h1></div>
+            <div class="left"><h4>Ajeet's <span class="purple">Portfolio</span> </h1></div>
             <div class="right">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -24,8 +25,11 @@
             </div>
         </nav>
     </header>
+  
     <main>
-        <section id="home" class="first">
+          <br id="home"> <br> <br>
+        <section  class="first">
+            
             <div class="leftsection">
                 <div>Hi, My name is <span class="purple">Ajeet </span> </div>
                 <div class="text-iam">and I am a </div>
@@ -34,6 +38,7 @@
                    <a href="https://docs.google.com/document/d/1gvelY8_oSESakggydYaQg38-pIsfeo8C-8oizBJNohA/edit?usp=drive_link" target="_blank"> <button class="btn">Download Resume</button></a>
                   <a href="https://github.com/Ajeet-singh-Rajput9971" target="_blank">  <button class="btn">Visit Github</button></a>
                   </div>
+                
             </div>
             <div class="rightsection">
                 <div class="profile-image">
@@ -42,9 +47,46 @@
                 </div>
                
             </div>
+           
         </section>
-        <hr>
-        <section id="projects" class="second">
+          <hr id="about">
+        
+        <br>
+         <h1 style="text-align: center;">About</h1>
+        <section  class="third">
+            
+                <div class="About">
+                <p>I am a BCA student passionate about software development and technology.<br><br>
+
+I have a strong foundation in HTML, CSS, and JavaScript, and I am currently learning Data Structures and Algorithms (DSA) in Java.<br> <br>
+
+My goal is to become a Software Engineer and build efficient, user-friendly applications while continuously improving my skills. Feel free to connect!</p>
+                    
+                </div>
+                <div class="education">
+                    <div class="graduat About">
+                        <h4>
+                             <i class="fa-solid fa-graduation-cap"></i><br>
+                             B.C.A
+                        </h4>
+                        <p>I am a BCA student passionate about software development and technology.</p>
+                      
+                    </div>
+                      <div class="graduat About">
+                        <h4>
+                          <i class="fa-solid fa-code"></i><br>
+                           Software Development
+                        </h4>
+                        <p>Passionate about building real-world tools</p>
+                      
+                    </div>
+
+                </div>
+            
+        </section>
+        <hr id="projects">
+        <br>
+        <section  class="second">
             <span class="text-gray">What I have done so far</span>
 
             <h1>Projects</h1>
@@ -53,15 +95,8 @@
                 <div class="no-project">Projects are not available right now</div>
                 
         </section>
-        <hr>
-        <section id="about" class="third">
-             <h1>About</h1>
-                <div class="About">
-                 I am a B.C.A 1st year student in Royal Educational Institute Ghaziabad. I have strong knowledge of HTML, CSS, and C language.
-                    
-                </div>
-            
-        </section>
+    
+        
         <hr>
         <section id="contact" class="fourth">
             <h1>Contact</h1>
@@ -70,14 +105,14 @@
                 <p class="form-info">You can use the contact form below. Name and message fields are required.</p>
                 <div class="form-fill">
                     <input type="text" id="name" placeholder="full Name" required>
-                </div>
-                <div class="form-fill">
+                
+             
                     <input type="text" id="number" placeholder="Phone number" required>
-                </div>
-                <div class="form-fill">
+               
+                
                     <input type="text" id="Email" placeholder="Email address">
-                </div>
-                <div class="form-fill">
+                
+                
                     <textarea id="message" placeholder="Your message" style="height: 100px;"></textarea>
                 </div>
                 <div class="button-submit">
@@ -97,6 +132,7 @@
   <script>
     var typed = new Typed('#element', {
       strings: ['B.C.A Student'],
+    
       typeSpeed: 100,
     });
   </script>
