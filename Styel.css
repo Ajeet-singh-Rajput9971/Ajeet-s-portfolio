@@ -300,6 +300,45 @@ footer{
     margin-top: 10px;
 }
 
+.skill-section{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin: auto;
+}
+.programming{
+  
+   width: 24rem;
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+}
+.skill-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills{
+    width: 9.4rem;
+    height: 3rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    margin: 0.5rem;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.301);
+}
+.skills:hover{
+    border: 2px solid rgb(21 108 221);
+}
+.skills i{
+    background-color: rgba(160, 159, 159, 0.233);
+    border-radius: 17px;
+    padding: 10px;
+    color: rgb(21 108 221);
+    margin: 5px;
+}
+
 @media screen and (max-width:1000px ) {
      /* body{
         background-color: red;
