@@ -52,9 +52,49 @@ nav ul li a:hover{
 }
 .left{
     font-size: 2rem;
-    
-  
+}
+.nav-option-moblie{
+       position: fixed;
+    top: 0;
+    right: -53%;
+    height: 685px;
+    width: 50%;
 
+    background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+   transition: linear,900ms;
+}
+.nav-option-moblie ul{
+    list-style: none;
+    margin:4.2rem 20px;
+    height: 100%;
+
+}
+.nav-option-moblie ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.23rem;
+    transition: linear, 500ms;
+}
+.exit{
+    border: none;
+    background-color: transparent;
+    color: rgb(99, 99, 99);
+    font-size: 1.5rem;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+
+}
+.nav-option-moblie ul li{
+    margin: 1.5rem 0;
+}
+.nav-option-moblie ul li a:hover{
+        color: rgb(21 108 221);
 }
 .first{
     display: flex;
