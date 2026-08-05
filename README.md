@@ -16,16 +16,16 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 * **Frontend:** HTML, CSS, JavaScript.
 * **Styling:** CSS 
-* **Deployment:**GitHub Pages
+* **Deployment:** GitHub Pages
 
 
 ## 📬 Contact
 
 Feel free to reach out if you'd like to collaborate or discuss opportunities.
 
-* Email: 
-* LinkedIn: 
-* GitHub: 
+* Email: ajeetsingh30106@gmail.com
+* LinkedIn: https://www.linkedin.com/in/ajeet-singh-406943386/ 
+* GitHub: https://github.com/Ajeet-singh-Rajput9971
 
 ## 🤝 Contributing
 
