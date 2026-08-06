@@ -77,6 +77,11 @@ nav ul li a:hover{
 .left{
     font-size: 2rem;
 }
+.btn-mode{
+    height: 1.4rem;
+    width: 1.4rem;
+    cursor: pointer;
+}
 .nav-option-moblie{
        position: fixed;
     top: 0;
