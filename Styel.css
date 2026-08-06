@@ -3,10 +3,34 @@
             padding: 0;
             transition: 600ms;
         }
-body{
-    background-color:  rgb(255 255 255);;
 
-    color: rgb(8, 8, 8);
+:root{
+     --bg-color: rgb(255 255 255);
+    --text-color: #222222;
+    --button-bg: rgb(21, 108, 221);
+    --button-text: #ffffff;
+    --nav-bg : rgba(255, 255, 255, 0.3);
+    --p-imageShadow:0px 0px 40px rgb(21, 108, 221, 0.5); 
+    --border:#ffffff;
+    --contener-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+    --exit: rgb(99, 99, 99);
+}
+
+/* dark */
+.dark{
+    --bg-color: rgb(34, 34, 34);
+    --text-color: rgb(255 255 255);
+    --button-bg: rgb(21, 108, 221);
+    --button-text: #ffffff;
+    --nav-bg:rgb(34, 34, 34, 0.3);
+    --p-imageShadow:0px 0px 40px rgb(225, 225, 225, 0.5); 
+    --border:rgb(21, 108, 221);
+    --contener-shadow: 0 0 5px rgba(225, 225, 225, 0.301);
+    --exit: rgb(253 253 253 / 57%)
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'poppins', sans-serif;
     
 }
@@ -26,7 +50,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 58px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--nav-bg);
      backdrop-filter: blur(10px); 
      box-shadow: 0px 5px 10px rgba(21, 119, 248, 0.5);
     
@@ -43,7 +67,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: rgb(27, 27, 27);
+    color: var(--text-color);
 }
 nav ul li a:hover{
     color: rgb(21, 108, 221);
@@ -75,7 +99,7 @@ nav ul li a:hover{
 }
 .nav-option-moblie ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-weight: bolder;
     font-size: 1.23rem;
     transition: linear, 500ms;
@@ -83,7 +107,7 @@ nav ul li a:hover{
 .exit{
     border: none;
     background-color: transparent;
-    color: rgb(99, 99, 99);
+    color: var(--exit);
     font-size: 1.5rem;
     margin: 10px;
     position: absolute;
@@ -210,7 +234,7 @@ footer{
 }
 .leftsection .btn{
     padding: 20px;
-    background-color: rgb(21 108 221);
+    background-color:var(--button-bg);
     color: white;
     border: 2px,solid, white ;
     border-radius: 3rem;
@@ -276,7 +300,7 @@ footer{
 
 }
 .fourth .form-fill input{
-    color: white;
+    color: var(--text-color);
   
     border: 3px solid  rgb(21 108 221);
     border-radius: 5px;
@@ -284,10 +308,11 @@ footer{
     width: 80%;
     margin-top: 6px;
     padding: 2px;
-
+    background-color: var(--bg-color);
 }
 .fourth .form-fill #message{
-    color : white; 
+    color : var(--text-color);
+    background-color: var(--bg-color);
     border: 3px solid rgb(21 108 221);
     border-radius: 5px;
     width: 80%;
@@ -329,9 +354,9 @@ footer{
 .rightsection{
     height: 355px;
     width: 355px;
-    border: 0.5rem solid rgb(255, 255, 255);
+    border: 0.5rem solid var(--border);
     border-radius: 50%;
-    box-shadow: 0px 0px 40px rgb(21, 108, 221, 0.5);
+    box-shadow: var(--p-imageShadow);
     
 }
 .button-submit {
@@ -354,7 +379,7 @@ footer{
     padding: 1rem;
     margin: 1rem 0 ;
     border-radius: 12px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+    box-shadow: var(--contener-shadow);
 }
 .skill-box{
     display: flex;
@@ -586,3 +611,6 @@ footer{
     }
     
    } 
+
+
+
