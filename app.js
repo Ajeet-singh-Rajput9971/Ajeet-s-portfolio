@@ -19,12 +19,18 @@ for(btn of modeBtn){
     let body= document.querySelector("body");
     if(body.classList.contains("dark")){
         body.classList.remove("dark");
-        btn.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+        for(btn of modeBtn){
+             btn.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+        }
+       
        
     }
     else{
         body.classList.add("dark");
-         btn.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+        for(btn of modeBtn){
+             btn.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+        }
+       
     }
 });
 
