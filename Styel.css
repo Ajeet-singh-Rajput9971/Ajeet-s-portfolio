@@ -391,6 +391,7 @@ footer{
     flex-wrap: wrap;
 }
 .skills{
+    align-content: center;
     width: 9.4rem;
     height: 3rem;
     font-size: 1rem;
