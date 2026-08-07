@@ -20,7 +20,9 @@ for(btn of modeBtn){
     if(body.classList.contains("dark")){
         body.classList.remove("dark");
         for(btn of modeBtn){
-             btn.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+             btn.innerHTML = `<span class="material-symbols-outlined">
+light_mode
+</span>`;
         }
        
        
@@ -28,7 +30,7 @@ for(btn of modeBtn){
     else{
         body.classList.add("dark");
         for(btn of modeBtn){
-             btn.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+             btn.innerHTML = `<i class="fa-regular fa-moon"></i>`;
         }
        
     }
