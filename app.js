@@ -37,3 +37,21 @@ light_mode
 });
 
 }
+
+const header = document.querySelector("header");
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 70) {
+    // Scrolling down
+    header.classList.add("hide");
+  } else {
+    // Scrolling up
+    header.classList.remove("hide");
+  }
+
+  lastScrollY = currentScrollY;
+});
