@@ -55,3 +55,63 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = currentScrollY;
 });
+
+
+const copyBox = document.getElementById("copy-mail");
+
+copyBox.addEventListener("click", () => {
+  const textToCopy = document.getElementById("mail").innerText;
+
+  const textarea = document.createElement("textarea");
+
+  textarea.value = textToCopy;
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+
+  document.body.appendChild(textarea);
+
+  textarea.focus();
+  textarea.select();
+
+  const copied = document.execCommand("copy");
+
+  textarea.remove();
+
+  if (copied) {
+    copyBox.innerHTML = `<i class="fa-solid fa-check copy"></i>`;
+
+    setTimeout(() => {
+      copyBox.innerHTML = `<i class="fa-regular fa-copy copy"></i>`;
+    }, 1500);
+  }
+});
+
+const phoneCopy = document.getElementById("phone");
+
+phoneCopy.addEventListener("click", () => {
+    console.log("he");
+  const textToCopy = document.getElementById("phone-copy").innerText;
+
+  const textarea = document.createElement("textarea");
+
+  textarea.value = textToCopy;
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+
+  document.body.appendChild(textarea);
+
+  textarea.focus();
+  textarea.select();
+
+  const copied = document.execCommand("copy");
+
+  textarea.remove();
+
+  if (copied) {
+    copyBox.innerHTML = `<i class="fa-solid fa-check copy"></i>`;
+
+    setTimeout(() => {
+      copyBox.innerHTML = `<i class="fa-regular fa-copy copy"></i>`;
+    }, 1500);
+  }
+});

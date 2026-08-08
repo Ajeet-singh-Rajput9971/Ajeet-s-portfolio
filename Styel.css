@@ -300,7 +300,7 @@ footer{
     text-align: center;
 }
 .fourth{
-    max-width: 80vh;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -314,7 +314,7 @@ footer{
     border: 3px solid  rgb(21 108 221);
     border-radius: 5px;
     height: 30px;
-    width: 80%;
+    width: 90%;
     margin-top: 6px;
     padding: 2px;
     background-color: var(--bg-color);
@@ -324,15 +324,17 @@ footer{
     background-color: var(--bg-color);
     border: 3px solid rgb(21 108 221);
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     margin-top:6px ;
     padding: 2px;
 }
 .form-info{
     text-align: center;
+    font-size: 14px;
 }
 .form-fill{
     display: flex;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -393,6 +395,7 @@ footer{
 .skill-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .skills{
     align-content: center;
@@ -417,6 +420,70 @@ footer{
 }
 .nav-option{
     display: none;
+}
+
+.contact-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.socal{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 22rem;
+    border-radius:  12px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--contener-shadow);
+}
+.link-box{
+    display: flex;
+    width: 24rem;
+    border: 2px solid white;
+    align-items: center;
+    margin: 1rem 0;
+    border-radius: 17px;
+    padding: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.301);
+}
+.link-box i{
+    font-size: 1.3rem;
+    margin: 0.5rem;
+    color: var(--button-bg);
+}
+.upper{
+    text-transform: uppercase;
+    font-size:12px ;
+    font-weight: 400;
+    color: gray;
+}
+.lower{
+    font-size: 14px ;
+    font-weight: 600;
+}
+.link-box .copy{
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 87px;
+}
+.link-box .copy:hover{
+    background-color: #6b6a6a73;
+}
+form{
+    width: 25rem;
+}
+.over-flow{
+    width: 295.95px;
+     margin: 0 0.5rem;
+}
+.socal a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 @media screen and (max-width:1000px ) {
@@ -486,6 +553,14 @@ footer{
             font-size: 1rem;
 
          }
+    .socal{
+        margin:1rem;
+    }
+    .contact-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
 
     .skill-section{
         width: auto;
@@ -530,7 +605,27 @@ footer{
         display: flex;
     }
     
+    .socal{
+        width: 19rem;
+    }
+    .socal .link-box{
+        width: 100%;
+    }
+    .socal a{
+        width: 100%;
+    }
+    .over-flow{
+        width: 72%;
+    }
+    .link-box .copy{
+        margin-left: 8px;
+    }
     
+    .lower {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
     .rightsection img{
         width: 80%;
     }
