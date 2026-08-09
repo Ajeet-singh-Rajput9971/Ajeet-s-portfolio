@@ -86,10 +86,11 @@ copyBox.addEventListener("click", () => {
   }
 });
 
+
 const phoneCopy = document.getElementById("phone");
 
+
 phoneCopy.addEventListener("click", () => {
-    console.log("he");
   const textToCopy = document.getElementById("phone-copy").innerText;
 
   const textarea = document.createElement("textarea");
@@ -108,10 +109,10 @@ phoneCopy.addEventListener("click", () => {
   textarea.remove();
 
   if (copied) {
-    copyBox.innerHTML = `<i class="fa-solid fa-check copy"></i>`;
+    phoneCopy.innerHTML = `<i class="fa-solid fa-check copy"></i>`;
 
     setTimeout(() => {
-      copyBox.innerHTML = `<i class="fa-regular fa-copy copy"></i>`;
+      phoneCopy.innerHTML = `<i class="fa-regular fa-copy copy"></i>`;
     }, 1500);
   }
 });
