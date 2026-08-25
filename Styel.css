@@ -379,14 +379,14 @@ footer{
 .skill-section{
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
+    width: 88vw;
     justify-content: space-around;
     margin: auto;
 }
 .programming{
   
-   width: 24rem;
-    height: 12rem;
+   width: 34rem;
+    height: auto;
     padding: 1rem;
     margin: 1rem 0 ;
     border-radius: 12px;
@@ -395,7 +395,7 @@ footer{
 .skill-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .skills{
     align-content: center;
@@ -486,6 +486,20 @@ form{
     color: var(--text-color);
 }
 
+@media screen and (max-width:1100px){
+   .programming{
+    width: 26rem;
+   }
+
+   .skills {
+    width: 6.7rem;
+    font-size: 0.7rem;
+   }
+   .skill-section{
+        width: 95vw;
+   }
+}
+
 @media screen and (max-width:1000px ) {
      /* body{
         background-color: red;
@@ -572,7 +586,16 @@ form{
    
      }
      
-    
+    @media  screen and (max-width:600px) {
+    .programming {
+      width: 28rem;
+     }
+
+     .skills {
+        width: 7.4rem;
+        font-size: 0.8rem;
+     }
+    }
 
    @media screen and (max-width:500px){
     .rightsection {
@@ -653,6 +676,7 @@ form{
     }
     .programming {
         margin: 1rem 0;
+        width: 20rem;
     }
     .leftsection  .button{
         padding: 5px 0px;
@@ -668,8 +692,9 @@ form{
         font-size: 0.6rem;
         margin-left: 25px;
     }
-   
-    
+   .skill-box {
+        padding: 0.69rem;
+   }
     h3{
         font-size: 1rem;
     }
@@ -684,12 +709,12 @@ form{
    
     .programming {
     width: 19.5rem;
-    height: 11rem;
+    
     }
     .skills {
-    width: 7.7rem;
+           width: 7.1rem;
         height: 2.6rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .rightsection {
         width: 14rem;
